@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+	<title>Valjak</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div id="wrapper">
+
+		<h1>Zapremina valjka</h1>
+
+		<div id="div1">
+
+			<img class="valjak" src="images/valjak.png" alt="Skica valjka">
+			
+			<p class="formula right">
+				<b>r</b> &minus; poluprečnik valjka
+				<br>
+				<br>
+				<b>H</b> &minus; visina valjka
+				<br>
+				<br>
+				<b>&pi;</b> &asymp; 3,14
+			</p>
+
+			<p class="ta">
+				<br>
+				Formula za izračunavanje zapremine valjka: 
+				<br>
+				<br>
+				<span class="formula bottom"> <b>V</b> &equals; <b>r&sup2;</b> &times; <b>&pi;</b> &times; <b>H</b> </span>
+			</p>
+		</div>
+
+		<div id="div2">
+			<h2>Izračunavanje zapremine</h2>
+			<br>
+			<p class="pojasnjenje">U polja unesite vrednosti visine i poluprečnika valjka, izaberite mernu jedinicu i kliknite na dugme "Izračunaj".
+			<br>
+			<b>Rešenje će biti izraženo u cm<sup>2</sup>.</b>
+			</p>
+
+
+			<div id="izracunavanje">
+
+				<div id="form">
+					<input type="number" id="pp" name="pp" placeholder="r" min="1">
+					<select id="ppJ" class="merJ">
+						<option value="mm">mm</option>
+						<option value="cm">cm</option>
+						<option value="dm">dm</option>
+						<option value="m">m</option>
+					</select>
+
+					<p>
+						<b>r&sup2;</b> &times; <b>&pi;</b> &times;
+					</p>
+
+					<input type="number" id="H" name="H" placeholder="H" min="1">
+					<select id="HJ" class="merJ">
+						<option value="mm">mm</option>
+						<option value="cm">cm</option>
+						<option value="dm">dm</option>
+						<option value="m">m</option>
+					</select>
+				</div>
+				
+				<button id="button" type="button" onclick="Izracunaj()">IZRAČUNAJ</button>
+
+				<div id="resenje">
+					<script src="js/script.js"></script>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
