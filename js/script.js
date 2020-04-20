@@ -43,9 +43,10 @@ function Izracunaj()
 		else {
 
 		}
-
+	var pi=3.14;
 	var resenje = poluprecnik() * poluprecnik();
 	resenje= resenje * visina();
+	resenje= resenje * pi;
 
 
 	document.getElementById("resenje").innerHTML= "<p>Zapremina valjka je:<br> <b>"+resenje+"cm<sup>3</sup></b>.</p>";
