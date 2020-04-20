@@ -48,5 +48,5 @@ function Izracunaj()
 	resenje= resenje * visina();
 
 
-	document.getElementById("resenje").innerHTML= "<p>Zapremina valjka je:<br> <b>"+resenje+"cm&sup2;</b>.</p>";
+	document.getElementById("resenje").innerHTML= "<p>Zapremina valjka je:<br> <b>"+resenje+"cm&sup3;</b>.</p>";
 }
